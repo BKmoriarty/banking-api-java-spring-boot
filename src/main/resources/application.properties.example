@@ -1,0 +1,15 @@
+# application.properties.example
+spring.datasource.url=jdbc:postgresql://localhost:5432/banking
+spring.datasource.username=[your-db-username]
+spring.datasource.password=[your-db-password]
+spring.jpa.hibernate.ddl-auto=update
+
+spring.rabbitmq.host=localhost
+spring.rabbitmq.port=5672
+spring.rabbitmq.username=[rabbitmq-username]
+spring.rabbitmq.password=[rabbitmq-password]
+rabbitmq.queue.name=transfer-notifications
+rabbitmq.exchange.name=transfer-exchange
+rabbitmq.routing.key=transfer.routing.key
+
+jwt.secret=[your-jwt-secret]
